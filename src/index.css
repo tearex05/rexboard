@@ -1,13 +1,172 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: wallington;
+  src: url(./assets/wallington.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georama', sans-serif;
+  transition: all 0.2s ease;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body{
+  background-color: ghostwhite;
+  position: relative
+}
+
+.font2{
+  font-family: wallington;
+}
+
+.bg{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shadowx{
+  text-shadow: -1px 1px white;
+}
+
+.shadowx2{
+  text-shadow: 3px 3px black;
+}
+
+.sx{
+  box-shadow: 6px 6px black;
+}
+
+.sx:hover{
+  box-shadow: 1px 1px black;
+}
+
+.btn{
+  background: white;
+  border: 2px solid black;
+  box-shadow: 6px 6px black;
+  margin: 0 2px;
+}
+
+@media (max-width: 500px){
+  .btn{
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+} 
+.btn2{
+  width: 200px;
+  height: 30px;
+}
+}
+
+@media (min-width: 501px){
+  .btn{
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+} 
+.btn2{
+  width: 200px;
+  height: 40px;
+}
+}
+
+@media (min-width: 800px){
+  .btn{
+  width: 55px;
+  height: 55px;
+  font-size: 2rem;
+} 
+.btn2{
+  width: 300px;
+  height: 55px;
+}
+}
+
+.btn2{
+  margin-top: 0.5rem;
+  background: white;
+  border: 2px solid black;
+  box-shadow: 6px 6px black;
+}
+
+.btn:hover{
+  box-shadow: 3px 3px black;
+}
+
+.btn:active{
+  box-shadow: 0px 0px black;
+}
+
+.btn2:hover{
+  box-shadow: 3px 3px black;
+}
+
+.btn2:active{
+  box-shadow: 0px 0px black;
+}
+
+.animate1:hover .text1{
+  transform: translateY(-20px);
+}
+
+.animate1:hover .img1{
+  transform: translateY(20px);
+}
+
+.animate2:hover .text2{
+  transform: translateX(-20px);
+}
+
+.animate2:hover .img2{
+  transform: translateX(20px);
+}
+
+.animate3:hover .text3{
+  transform: translateX(20px);
+}
+
+.animate3:hover .img3{
+  transform: translateX(-20px);
+}
+
+.rotate{
+  animation: rotate 100s linear infinite;
+}
+
+.load1{
+  animation: load1 0.8s ease 1s forwards;
+}
+
+.load2{
+  animation: load2 0.8s ease 1s forwards;
+}
+
+@keyframes load1{
+  0%{transform: translateX(-40px);
+    opacity: 0;}
+  100%{transform: translateX(0);
+    opacity: 1;}
+}
+
+@keyframes load2{
+  0%{transform: translateY(40px);
+    opacity: 0;}
+  100%{transform: translateX(0);
+    opacity: 1;}
+}
+
+@keyframes rotate{
+  0%{transform: rotateZ(0);}
+  100%{transform: rotateZ(360deg);}
 }
