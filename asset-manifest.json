@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/rexboard/static/css/main.151af7d0.css",
+    "main.js": "/rexboard/static/js/main.d05f700b.js",
+    "static/media/pic5.png": "/rexboard/static/media/pic5.a679d3b5c3e83cae0009.png",
+    "static/media/pic3.png": "/rexboard/static/media/pic3.35034732cbf9847a1349.png",
+    "static/media/pic6.png": "/rexboard/static/media/pic6.614b66fa5c1282585af3.png",
+    "static/media/pic1.jpg": "/rexboard/static/media/pic1.46a9187da1acbe4ae10b.jpg",
+    "static/media/pic7.png": "/rexboard/static/media/pic7.2e5409176d23f53d9fff.png",
+    "static/media/wallington.ttf": "/rexboard/static/media/wallington.8179d9c02c90ea9b6fd6.ttf",
+    "static/media/recycle.svg": "/rexboard/static/media/recycle.c2ca0db8bd4614bf15c7731196af133e.svg",
+    "static/media/blob.svg": "/rexboard/static/media/blob.f6405c7503a89ee109de69dce1475a65.svg",
+    "index.html": "/rexboard/index.html",
+    "main.151af7d0.css.map": "/rexboard/static/css/main.151af7d0.css.map",
+    "main.d05f700b.js.map": "/rexboard/static/js/main.d05f700b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.151af7d0.css",
+    "static/js/main.d05f700b.js"
+  ]
+}
